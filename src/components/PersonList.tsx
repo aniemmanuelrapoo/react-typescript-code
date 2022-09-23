@@ -1,8 +1,23 @@
 import React from 'react'
 
-const PersonList = () => {
+type nameListArray = {
+  names:{
+    first: string
+    last: string
+  }[]
+}
+
+const PersonList = ({names}: nameListArray) => {
   return (
-    <div>PersonList</div>
+    <div>
+      {
+        names.map(name => {
+          return(
+            <h2 key={name.first}>{name.first} {name.last}</h2>
+          )
+        })
+      }
+    </div>
   )
 }
 
