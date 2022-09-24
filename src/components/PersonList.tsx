@@ -1,10 +1,8 @@
 import React from 'react'
+import { Name } from './Persion.types'
 
 type nameListArray = {
-  names:{
-    first: string
-    last: string
-  }[]
+  names:Name[]
 }
 
 const PersonList = ({names}: nameListArray) => {

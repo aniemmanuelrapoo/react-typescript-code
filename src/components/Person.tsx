@@ -1,11 +1,6 @@
 import React from 'react'
+import { PersonProps } from './Persion.types'
 
-type PersonProps = {
-  name: {
-    first: string,
-    last: string
-  }
-}
 
 const Person = ({name}: PersonProps) => {
   return (
