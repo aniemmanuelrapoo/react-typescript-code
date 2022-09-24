@@ -2,11 +2,12 @@ import React from 'react'
 
 type GreetProps = {
   name: string,
-  messageCount: number,
+  messageCount?: number,
   isLogin: boolean
 }
 
 const Greet = ({name, messageCount, isLogin}: GreetProps) => {
+  messageCount = 0
   return (
     <div>
       <h2>
